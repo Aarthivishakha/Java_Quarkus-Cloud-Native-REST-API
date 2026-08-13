@@ -1,12 +1,11 @@
-# Quarkus Cloud-Native REST API (Java 11)
+# Quarkus Cloud-Native REST API (Java 17)
 
 A production-shaped Quarkus REST microservice with health checks, versioned
 CRUD endpoints, validation, centralized error responses, tests, container
 packaging, CI, and exactly 12 integrated analysis-tool folders.
 
-This branch uses Quarkus `3.6.9`, the final Quarkus line that supports Java 11,
-with Jakarta REST and Jakarta Validation APIs. Modern analyzers run separately
-on Java 17 where their current releases require a newer analyzer runtime.
+This branch uses current Quarkus `3.38.0`, Jakarta APIs, and a Java 17 record
+for the validated data model. Build and analysis both run on Java 17.
 
 ## API
 
@@ -37,5 +36,5 @@ JaCoCo output, or Git history. See `tool-triggers/README.md`.
 
 ## Docker
 
-The Dockerfile provides a repeatable Java 11 build/runtime and exposes port 8080.
+The Dockerfile provides a repeatable Java 17 build/runtime and exposes port 8080.
 Docker is optional for local development but useful for CI and deployment.
