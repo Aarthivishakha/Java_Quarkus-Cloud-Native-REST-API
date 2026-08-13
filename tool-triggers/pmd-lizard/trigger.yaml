@@ -1,6 +1,6 @@
 name: pmd-lizard
 tools: ["PMD 7.26.0", "Lizard"]
-application_java: "8"
+application_java: "11"
 analysis_runtime: "Java 17 + Python 3"
 targets: ["src/main/java", "src/test/java"]
 commands:
