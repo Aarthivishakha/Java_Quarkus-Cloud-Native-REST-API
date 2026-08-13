@@ -1,0 +1,4 @@
+name: def-use-jacoco-ast
+tools: ["custom def-use", "JaCoCo 0.8.14", "JavaParser AST"]
+targets: ["src/main/java", "target/site/jacoco/jacoco.xml"]
+command: "mvn -B verify && python tool-triggers/def-use-jacoco-ast/def_use.py src/main/java target/site/jacoco/jacoco.xml"

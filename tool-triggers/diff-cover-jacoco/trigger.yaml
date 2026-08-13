@@ -1,0 +1,4 @@
+name: diff-cover-jacoco
+tools: ["diff-cover", "JaCoCo 0.8.14"]
+targets: ["Git diff", "target/site/jacoco/jacoco.xml"]
+command: "mvn -B verify && diff-cover target/site/jacoco/jacoco.xml --compare-branch=origin/main"
