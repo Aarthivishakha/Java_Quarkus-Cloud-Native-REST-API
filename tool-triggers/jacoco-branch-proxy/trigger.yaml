@@ -1,0 +1,4 @@
+name: jacoco-branch-proxy
+tools: ["JaCoCo 0.8.14 (branch proxy)"]
+targets: ["target/site/jacoco/jacoco.xml"]
+command: "mvn -B verify && python tool-triggers/jacoco-branch-proxy/branch_proxy.py target/site/jacoco/jacoco.xml"

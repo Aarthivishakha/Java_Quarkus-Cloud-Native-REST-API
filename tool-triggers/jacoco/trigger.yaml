@@ -1,0 +1,5 @@
+name: jacoco
+tools: ["JaCoCo 0.8.14"]
+targets: ["src/main/java", "src/test/java"]
+command: "mvn -B verify"
+outputs: ["target/site/jacoco/jacoco.xml", "target/site/jacoco/index.html"]
