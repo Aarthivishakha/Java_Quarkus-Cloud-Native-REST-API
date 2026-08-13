@@ -1,0 +1,4 @@
+name: git-pydriller
+tools: ["git", "PyDriller"]
+targets: [".git"]
+command: "python tool-triggers/git-pydriller/history.py ."
