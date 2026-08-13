@@ -1,12 +1,12 @@
-# Quarkus Cloud-Native REST API (Java 21)
+# Quarkus Cloud-Native REST API (Java 25)
 
 A production-shaped Quarkus REST microservice with health checks, versioned
 CRUD endpoints, validation, centralized error responses, tests, container
 packaging, CI, and exactly 12 integrated analysis-tool folders.
 
 This branch uses current Quarkus `3.38.0`, Jakarta APIs, a record data model,
-and Java 21 virtual threads for REST request execution. Build and analysis both
-run on Java 21.
+and virtual threads for REST request execution. Build and analysis both run on
+Java 25 using stable language features without preview flags.
 
 ## API
 
@@ -37,5 +37,5 @@ JaCoCo output, or Git history. See `tool-triggers/README.md`.
 
 ## Docker
 
-The Dockerfile provides a repeatable Java 21 build/runtime and exposes port 8080.
+The Dockerfile provides a repeatable Java 25 build/runtime and exposes port 8080.
 Docker is optional for local development but useful for CI and deployment.
