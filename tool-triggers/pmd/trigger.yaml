@@ -1,0 +1,5 @@
+name: pmd
+tools: ["PMD 7.26.0"]
+analysis_runtime: "Java 17"
+targets: ["src/main/java"]
+command: "pmd check -d src/main/java -R category/java/quickstart.xml -f json -r target/pmd.json"

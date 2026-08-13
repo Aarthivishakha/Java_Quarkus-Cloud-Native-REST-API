@@ -1,0 +1,6 @@
+name: dependency-security
+tools: ["OWASP Dependency-Check 13", "Grype"]
+targets: ["pom.xml", "."]
+commands:
+  - "dependency-check --project quarkus-rest-api --scan pom.xml --format JSON --out target/security"
+  - "grype dir:. -o json"

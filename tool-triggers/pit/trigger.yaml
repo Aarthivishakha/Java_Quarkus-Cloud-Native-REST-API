@@ -1,0 +1,4 @@
+name: pit
+tools: ["PIT 1.19.6"]
+targets: ["com.aarthivishakha.api.*", "src/test/java"]
+command: "mvn -B org.pitest:pitest-maven:1.19.6:mutationCoverage -DtargetClasses=com.aarthivishakha.api.*"
