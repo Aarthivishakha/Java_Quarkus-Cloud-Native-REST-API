@@ -18,4 +18,4 @@ Exactly 12 tool folders are integrated with this Quarkus project.
 | 12 | `git-pydriller` | Git + PyDriller | repository history |
 
 Modern analyzer releases may require Java 17 even though the application itself
-builds and runs on Java 17. Commands run in the Java 17 analysis job in CI.
+builds and runs on Java 21. Commands run in the Java 21 analysis job in CI.

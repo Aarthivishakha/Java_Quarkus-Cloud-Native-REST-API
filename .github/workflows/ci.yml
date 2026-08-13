@@ -1,23 +1,23 @@
 name: CI
 on:
   push:
-    branches: [Java_17]
+    branches: [Java_21]
   pull_request:
 permissions:
   contents: read
 jobs:
-  build-java-17:
+  build-java-21:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-java@v4
-        with: {distribution: temurin, java-version: '17', cache: maven}
+        with: {distribution: temurin, java-version: '21', cache: maven}
       - run: mvn -B verify
-  analysis-java-17:
+  analysis-java-21:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
         with: {fetch-depth: 0}
       - uses: actions/setup-java@v4
-        with: {distribution: temurin, java-version: '17', cache: maven}
+        with: {distribution: temurin, java-version: '21', cache: maven}
       - run: mvn -B verify
