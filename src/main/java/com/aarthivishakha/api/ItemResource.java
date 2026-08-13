@@ -21,7 +21,7 @@ public class ItemResource {
     @GET public List<Item> list() { return service.list(); }
     @POST public Response create(@Valid Item input) {
         Item created = service.create(input);
-        return Response.created(URI.create("/api/v1/items/" + created.id)).entity(created).build();
+        return Response.created(URI.create("/api/v1/items/" + created.id())).entity(created).build();
     }
     @GET @Path("/{id}") public Response get(@PathParam("id") long id) {
         Item item = service.find(id); return item == null ? Response.status(404).build() : Response.ok(item).build();
