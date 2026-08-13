@@ -1,7 +1,7 @@
 package com.aarthivishakha.api;
 
-import javax.validation.constraints.DecimalMin;
-import javax.validation.constraints.NotBlank;
+import jakarta.validation.constraints.DecimalMin;
+import jakarta.validation.constraints.NotBlank;
 
 public class Item {
     public Long id;
